@@ -15,8 +15,10 @@
     width: 70px;
     margin: 0 auto;
     &_animated {
-      animation-name: heartbeat;
-      animation-duration: 2s;
+      animation: heartbeat 1.5s ease infinite;
+      &:hover {
+        animation-play-state: paused;
+      }
     }
   }
   &__subtitle {
